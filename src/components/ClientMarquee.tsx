@@ -73,11 +73,13 @@ export function ClientMarquee({
     >
       <div
         className={cn(
-          "mx-auto flex max-w-screen-2xl items-center gap-4 px-4",
+          "mx-auto flex max-w-screen-2xl gap-4 px-4",
+          // Stack vertically on mobile, align inline on larger screens
+          "flex-col items-start sm:flex-row sm:items-center",
           "py-2 text-sm text-neutral-700"
         )}
       >
-        <span className="shrink-0 font-medium">{label}</span>
+        <span className="shrink-0 font-medium mb-2 sm:mb-0">{label}</span>
 
         <div
           className={cn(
