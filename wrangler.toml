@@ -1,0 +1,6 @@
+name = "sintaksis-vite"
+compatibility_date = "2025-09-07"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
