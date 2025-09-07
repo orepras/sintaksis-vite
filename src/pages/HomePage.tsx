@@ -8,6 +8,14 @@ import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { generateOrganizationSchema } from "../lib/structured-data"
 import { ClientMarquee } from "../components/ClientMarquee"
+import accesstimeLogo from "../assets/logos/accesstime.svg"
+import jagoLogo from "../assets/logos/jago.svg"
+import bcaLogo from "../assets/logos/bca.svg"
+import blibliLogo from "../assets/logos/blibli.svg"
+import kredivoLogo from "../assets/logos/kredivo.svg"
+import ocbcLogo from "../assets/logos/ocbc.svg"
+import suariseLogo from "../assets/logos/suarise.svg"
+import tokotypeLogo from "../assets/logos/tokotype.svg"
 
 export default function HomePage() {
 
@@ -74,14 +82,14 @@ export default function HomePage() {
         visible={true}
         label="Clients and collaborators:"
         items={[
-          { src: "./src/assets/logos/accesstime.svg", alt: "AccessTime" }, 
-          { src: "./src/assets/logos/jago.svg", alt: "Bank Jago" }, 
-          { src: "./src/assets/logos/bca.svg", alt: "BCA" },
-          { src: "./src/assets/logos/blibli.svg", alt: "Blibli" },
-          { src: "./src/assets/logos/kredivo.svg", alt: "Kredivo" },
-          { src: "./src/assets/logos/ocbc.svg", alt: "OCBC" },
-          { src: "./src/assets/logos/suarise.svg", alt: "Suarise" },
-          { src: "./src/assets/logos/tokotype.svg", alt: "Tokotype" },          
+          { src: accesstimeLogo, alt: "AccessTime" }, 
+          { src: jagoLogo, alt: "Bank Jago" }, 
+          { src: bcaLogo, alt: "BCA" },
+          { src: blibliLogo, alt: "Blibli" },
+          { src: kredivoLogo, alt: "Kredivo" },
+          { src: ocbcLogo, alt: "OCBC" },
+          { src: suariseLogo, alt: "Suarise" },
+          { src: tokotypeLogo, alt: "Tokotype" },          
           ]}
         speed="fast"
         pauseOnHover={true}
