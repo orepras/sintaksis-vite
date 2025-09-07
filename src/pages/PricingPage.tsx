@@ -103,7 +103,7 @@ export default function PricingPage() {
                       <div className="text-3xl font-bold mb-6 font-sans">Start From
                         <br />$2,000 / Rp25 Juta</div>
                       <p className="text-muted-foreground mb-6 font-mono">
-                        Custom pricing based on project scope for copywriting and web development
+                        Custom pricing based on project scope for copywriting and web development.
                       </p>
                       <ul className="space-y-3 font-mono">
                         <li className="flex items-start gap-3">
@@ -133,7 +133,7 @@ export default function PricingPage() {
                       </ul>
                       <div className="mt-8">
                         <Link to="/contact">
-                          <Button className="w-full">Hire Sintaksis for a Project</Button>
+                          <Button className="w-full">Contact Us for Project Based</Button>
                         </Link>
                       </div>
                     </div>
@@ -145,7 +145,7 @@ export default function PricingPage() {
                     <div className="bg-background p-8 rounded-lg shadow-sm">
                       <h3 className="font-medium text-xl mb-3 font-sans">Storytelling Partner</h3>
                       <div className="text-3xl font-bold mb-6 font-sans">Monthly Retainer <br />$1,000 / Rp16 Juta</div>
-                      <p className="text-muted-foreground mb-6 font-mono">EVERYTHING your brand needs to communicate. 3-month minimum retainer partnership</p>
+                      <p className="text-muted-foreground mb-6 font-mono">EVERYTHING your brand needs to communicate. 3-month minimum retainer partnership.</p>
                       <ul className="space-y-3 font-mono">
                         <li className="flex items-start gap-3">
                           <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
@@ -161,7 +161,7 @@ export default function PricingPage() {
                         </li>
                         <li className="flex items-start gap-3">
                           <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>Unlimited revisions</span>
+                          <span>Fully remote collaboration, unlimited revisions</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
@@ -174,7 +174,7 @@ export default function PricingPage() {
                       </ul>
                       <div className="mt-8">
                         <Link to="/contact">
-                          <Button className="w-full">Hire Fractional Team</Button>
+                          <Button className="w-full">Contact Us for Fractional Team</Button>
                         </Link>
                       </div>
                     </div>

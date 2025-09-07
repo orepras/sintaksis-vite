@@ -13,16 +13,16 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Sintaksis - Copywriting & Storytelling Studio | Copy That Sells. Stories That Stick.</title>
-        <meta name="description" content="Sintaksis offers premium, product-focused copywriting for businesses that value great storytelling—backed by predictable retainer pricing. Copy that sells, stories that stick." />
+        <title>Sintaksis - Copywriting & Storytelling Studio | Copy That Feels Human, Stories That Feel True.</title>
+        <meta name="description" content="Sintaksis offers premium, product-focused copywriting for businesses that value great storytelling—backed by predictable retainer pricing. Copy that feels human, stories that feel true." />
         <meta name="keywords" content="copywriting, storytelling, brand narrative, product copywriting, content strategy, marketing copy, business storytelling" />
         <meta property="og:title" content="Sintaksis - Copywriting & Storytelling Studio" />
-        <meta property="og:description" content="Copy that sells, stories that stick. Premium copywriting and storytelling for businesses at every stage." />
+        <meta property="og:description" content="Copy that feels human, stories that feel true. Premium copywriting and storytelling for businesses at every stage." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sintaksis.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sintaksis - Copywriting & Storytelling Studio" />
-        <meta name="twitter:description" content="Copy that sells, stories that stick. Premium copywriting and storytelling for businesses at every stage." />
+        <meta name="twitter:description" content="Copy that feels human, stories that feel true. Premium copywriting and storytelling for businesses at every stage." />
         <link rel="canonical" href="https://sintaksis.com" />
       </Helmet>
       
@@ -39,18 +39,17 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-white/80"></div>
           <div className="container relative z-10">
             <div className="flex flex-col justify-center space-y-6 max-w-3xl mx-auto">
-              <h1 className="text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl font-sans text-center">
-                Copywriting & Storytelling Studio.<br></br>
-Copy That Sells. Stories That Stick.
+              <h1 className="text-xl font-bold tracking-tight md:text-4xl font-sans text-center">
+                We Write Copy That Feels Human, <br></br> and Stories That Feel True.
               </h1>
-              <p className="text-lg font-mono text-center">Sintaksis offers premium, product-focused copywriting for business that value great storytelling—<span className="font-bold italic">backed by predictable retainer pricing.</span>
+              <p className="text-sm md:text-lg font-mono text-center">Sintaksis is a copywriting and storytelling studio helping businesses craft product-focused writing that builds trust, and scales with your business. Always clear. <span className="font-bold italic">Always on predictable retainer pricing.</span>
               </p>
                 <div className="text-center">
                   <Link 
                     to="/pricing" 
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors underline-offset-4 underline underline-offset-3"
                   >
-                    View detailed pricing plans
+                    View pricing plans
                   </Link>
                 </div>
                               <div className="flex flex-col gap-4 sm:flex-row justify-center">
@@ -62,7 +61,7 @@ Copy That Sells. Stories That Stick.
                       <div className="h-3 w-3 rounded-full bg-green-500"></div>
                       <div className="absolute inset-0 h-3 w-3 rounded-full bg-green-500 hover:bg-white animate-pulse blur-sm"></div>
                     </div>
-                    Book a Free Discovery Call
+                    Convince Yourself, Book a Free Call
                   </a>
                 </div>
                 
@@ -74,7 +73,7 @@ Copy That Sells. Stories That Stick.
         <section id="benefits" className="py-16 bg-muted/30 md:py-24">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight mb-6 sm:text-4xl font-sans max-w-3xl mx-auto">
-              Copywriting For Every Stage
+              Copywriting For Every Stage of Your Business
             </h2>
             <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto font-mono">
               Launching? Scaling? Reinventing? Our copywriting and product storytelling practices build stories that stick and drives meaningful results.
@@ -274,7 +273,7 @@ This is where we come in.</p>
         <section id="services" className="py-16 bg-muted/30 md:py-24">
           <div className="container max-w-3xl mx-auto px-4">
             <h2 className="text-3xl text-center font-bold tracking-tight mb-12 sm:text-4xl font-sans">
-              Sintaksis Services
+              Sintaksis Copywriting Services
             </h2>
 
             <Tabs defaultValue="productstory" className="w-full">

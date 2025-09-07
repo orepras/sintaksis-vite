@@ -13,12 +13,12 @@ export default function ContactPage() {
         "We typically begin new projects within 1-2 weeks of finalizing the agreement, depending on our current workload and the scope of your project.",
     },
     {
-      question: "Do you work with clients outside of Indonesia?",
+      question: "Where are Sintaksis clients based?",
       answer:
-        "Yes, we work with clients globally. Our team is comfortable with remote collaboration and can accommodate different time zones for meetings and communications.",
+        "We're based in Indonesia and started by serving local companies, but we've since partnered with businesses running in Europe. Our goal is to keep expanding and support clients worldwide with their copywriting and storytelling needs.",
     },
     {
-      question: "What information do you need to provide a quote?",
+      question: "What information do you need to provide a quote for a project?",
       answer:
         "To provide an accurate quote, we typically need to understand your business goals, project scope, timeline, and any specific requirements or constraints. Our initial consultation is designed to gather this information.",
     },
@@ -126,17 +126,16 @@ export default function ContactPage() {
 
                   <div>
                     <h3 className="text-xl font-semibold mb-3 font-sans">
-                      Do you work with clients outside of Indonesia?
+                      Where are Sintaksis clients based?
                     </h3>
                     <p className="text-muted-foreground font-mono">
-                      Yes, we work with clients globally. Our team is comfortable with remote collaboration and can
-                      accommodate different time zones for meetings and communications.
+                      We're based in Indonesia and started by serving local companies, but we've since partnered with businesses running in Europe. Our goal is to keep expanding and support clients worldwide with their copywriting and storytelling needs.
                     </p>
                   </div>
 
                   <div>
                     <h3 className="text-xl font-semibold mb-3 font-sans">
-                      What information do you need to provide a quote?
+                      What information do you need to provide a quote for a project?
                     </h3>
                     <p className="text-muted-foreground font-mono">
                       To provide an accurate quote, we typically need to understand your business goals, project scope,
