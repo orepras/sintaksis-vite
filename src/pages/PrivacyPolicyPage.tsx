@@ -82,6 +82,19 @@ export default function PrivacyPolicyPage() {
                 </div>
 
                 <div>
+                  <h2 className="text-2xl font-bold mb-4 font-sans">AI Usage</h2>
+                  <p className="text-muted-foreground font-mono mb-4">
+                    As a copywriting and storytelling studio, Sintaksis sometimes uses artificial intelligence (AI) tools to support our creative process. We want to be transparent about how AI is—and is not—used in our work:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2 text-muted-foreground font-mono">
+                    <li><strong>Research and Insights:</strong> We may use AI to help us gather findings, analyze large sets of information, or identify patterns that inform our creative approach.</li>
+                    <li><strong>Workflow Support:</strong> AI can assist us in structuring ideas, organizing references, or synthesizing information so we can dedicate more time and energy to the manual craft of storytelling.</li>
+                    <li><strong>Not a Substitute for Creativity:</strong> We never use AI to generate copy from scratch. The words, narratives, and brand stories we deliver are always written, refined, and owned by our human team.</li>
+                    <li><strong>Creative Elevation:</strong> Our use of AI is limited to elevating efficiency and sharpening our perspectives. It does not replace the originality, empathy, and creative judgment that define our work as storytellers.</li>
+                  </ul>
+                </div>
+
+                <div>
                   <h2 className="text-2xl font-bold mb-4 font-sans">Cookies</h2>
                   <p className="text-muted-foreground font-mono">
                     Our website uses cookies to distinguish you from other users of our website. This helps us to provide
