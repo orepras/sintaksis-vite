@@ -7,6 +7,7 @@ import { SiteFooter } from "../components/site-footer"
 import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { generateOrganizationSchema } from "../lib/structured-data"
+import { ClientMarquee } from "../components/ClientMarquee"
 
 export default function HomePage() {
 
@@ -39,8 +40,8 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-white/80"></div>
           <div className="container relative z-10">
             <div className="flex flex-col justify-center space-y-6 max-w-3xl mx-auto">
-              <h1 className="text-xl font-bold tracking-tight md:text-4xl font-sans text-center">
-                We Write Copy That Feels Human, <br></br> and Stories That Feel True.
+              <h1 className="text-4xl font-bold tracking-tight md:text-5xl font-sans text-center">
+                Writing That Works<br></br><strong>the Way People Do</strong>.
               </h1>
               <p className="text-sm md:text-lg font-mono text-center">Sintaksis is a copywriting and storytelling studio helping businesses craft product-focused writing that builds trust, and scales with your business. Always clear. <span className="font-bold italic">Always on predictable retainer pricing.</span>
               </p>
@@ -61,13 +62,32 @@ export default function HomePage() {
                       <div className="h-3 w-3 rounded-full bg-green-500"></div>
                       <div className="absolute inset-0 h-3 w-3 rounded-full bg-green-500 hover:bg-white animate-pulse blur-sm"></div>
                     </div>
-                    Convince Yourself, Book a Free Call
+                    Book a free discovery call
                   </a>
                 </div>
                 
             </div>
           </div>
         </section>
+
+      <ClientMarquee
+        visible={true}
+        label="Clients and collaborators:"
+        items={[
+          { src: "./src/assets/logos/accesstime.svg", alt: "AccessTime" }, 
+          { src: "./src/assets/logos/jago.svg", alt: "Bank Jago" }, 
+          { src: "./src/assets/logos/bca.svg", alt: "BCA" },
+          { src: "./src/assets/logos/blibli.svg", alt: "Blibli" },
+          { src: "./src/assets/logos/kredivo.svg", alt: "Kredivo" },
+          { src: "./src/assets/logos/ocbc.svg", alt: "OCBC" },
+          { src: "./src/assets/logos/suarise.svg", alt: "Suarise" },
+          { src: "./src/assets/logos/tokotype.svg", alt: "Tokotype" },          
+          ]}
+        speed="fast"
+        pauseOnHover={true}
+        className="mt-8"
+      />
+
 
         {/* Storytelling Benefits Section */}
         <section id="benefits" className="py-16 bg-muted/30 md:py-24">

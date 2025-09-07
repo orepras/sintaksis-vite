@@ -80,6 +80,9 @@ export default {
           "0%, 100%": { opacity: 0.1 },
           "50%": { opacity: 0.3 },
         },
+        "marquee": {
+          to: { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -87,6 +90,7 @@ export default {
         gradient: "gradient 15s ease infinite",
         "gradient-slow": "gradient 20s ease infinite",
         "pulse-slow": "pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "marquee": "marquee linear infinite"
       },
     },
   },
