@@ -8,6 +8,7 @@ import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet-async"
 import { generateOrganizationSchema } from "../lib/structured-data"
 import { ClientMarquee } from "../components/ClientMarquee"
+import { PortfolioSection } from "../components/portfolio-section"
 import accesstimeLogo from "../assets/logos/accesstime.svg"
 import jagoLogo from "../assets/logos/jago.svg"
 import bcaLogo from "../assets/logos/bca.svg"
@@ -96,15 +97,46 @@ export default function HomePage() {
         className="mt-8"
       />
 
+        {/* Studio Profile Section */}
+        <section id="profile" className="py-16 md:py-24 gradient-background">
+          <div className="container">
+            <div className="mx-auto max-w-3xl bg-background/90 p-8 rounded-lg shadow-sm">
+              <h2 className="text-3xl font-bold tracking-tight mb-8 sm:text-4xl font-sans">More than copy. Let's build story.</h2>
+              <div className="space-y-6 text-lg font-mono">
+                <p>
+Your business should have a story worth remembering. But too often these stories get fractured, scattered across disjointed touchpoints, diluted by committee edits, lost in translation between teams. What starts as a compelling narrative becomes a whisper in the marketplace noise. Don't just depend on campaigns, build a brand that lasts.
+                </p>
+                
+                <p>
+This is where we come in.</p>
+<p>Sintaksis operates as your narrative continuity team, ensuring your story holds its power whether it's:<br/>
+· A three-word button in your app<br />
+· The manifesto on your homepage<br />
+· The press release announcing your Series B<br />
+· The email that turns one-time buyers into devotees                </p>
+                
+                <p>
+                  Our work starts with a simple premise: <strong>Your product deserves to be understood, your brand deserves to be remembered, and your customers deserve a story worth buying into.</strong>
+</p>
+<p>Let's tell it properly.
+
+</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Portfolio Section */}
+        <PortfolioSection />
 
         {/* Storytelling Benefits Section */}
         <section id="benefits" className="py-16 bg-muted/30 md:py-24">
           <div className="container">
             <h2 className="text-3xl font-bold tracking-tight mb-6 sm:text-4xl font-sans max-w-3xl mx-auto">
-              Copywriting For Every Stage of Your Business
+              We Tell Stories For Every Business Stages
             </h2>
             <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto font-mono">
-              Launching? Scaling? Reinventing? Our copywriting and product storytelling practices build stories that stick and drives meaningful results.
+              Launching? Scaling? Reinventing? Our storytelling practices build stories that stick and drives meaningful results. We have experience with every stage of business, from startups to established companies.
             </p>
 
             <Tabs defaultValue="startup" className="w-full">
@@ -268,40 +300,11 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Studio Profile Section */}
-        <section id="profile" className="py-16 md:py-24 gradient-background">
-          <div className="container">
-            <div className="mx-auto max-w-3xl bg-background/90 p-8 rounded-lg shadow-sm">
-              <h2 className="text-3xl font-bold tracking-tight mb-8 sm:text-4xl font-sans">More than copy. Let's build story.</h2>
-              <div className="space-y-6 text-lg font-mono">
-                <p>
-Your business should have a story worth remembering. But too often these stories get fractured, scattered across disjointed touchpoints, diluted by committee edits, lost in translation between teams. What starts as a compelling narrative becomes a whisper in the marketplace noise. Don't just depend on campaigns, build a brand that lasts.
-                </p>
-                
-                <p>
-This is where we come in.</p>
-<p>Sintaksis operates as your narrative continuity team, ensuring your story holds its power whether it's:<br/>
-· A three-word button in your app<br />
-· The manifesto on your homepage<br />
-· The press release announcing your Series B<br />
-· The email that turns one-time buyers into devotees                </p>
-                
-                <p>
-                  Our work starts with a simple premise: <strong>Your product deserves to be understood, your brand deserves to be remembered, and your customers deserve a story worth buying into.</strong>
-</p>
-<p>Let's tell it properly.
-
-</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Services Section */}
         <section id="services" className="py-16 bg-muted/30 md:py-24">
           <div className="container max-w-3xl mx-auto px-4">
             <h2 className="text-3xl text-center font-bold tracking-tight mb-12 sm:text-4xl font-sans">
-              Sintaksis Copywriting Services
+              Our Services
             </h2>
 
             <Tabs defaultValue="productstory" className="w-full">
@@ -417,38 +420,6 @@ This is where we come in.</p>
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing Section */}
-        <section id="pricing" className="py-16 bg-muted/30 md:py-24">
-          <div className="container max-w-3xl mx-auto">
-            <h2 className="text-3xl text-center font-bold tracking-tight mb-6 sm:text-4xl font-sans">
-              Flexible Pricing Options
-            </h2>
-            <p className="text-lg text-center text-muted-foreground mb-8 font-mono">
-              We offer transparent pricing with options to suit businesses at every stage of growth.
-            </p>
-
-            <div className="bg-background p-8 rounded-lg shadow-sm mb-8">
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="text-center">
-                  <h3 className="font-medium mb-2 font-sans">Project Based</h3>
-                  <p className="text-muted-foreground font-mono">Full-scope brand & product storytelling. Hired for focused, high-impact sprints.</p>
-                </div>
-                <div className="text-center">
-                  <h3 className="font-medium mb-2 font-sans">Fractional Team</h3>
-                  <p className="text-muted-foreground font-mono">Dedicated, ongoing storytelling support—3-month minimum retainer partnership.</p>
-                </div>
-                
-              </div>
-            </div>
-
-            <div className="flex justify-center">
-              <Button asChild size="lg">
-                <Link to="/pricing">View Detailed Pricing</Link>
-              </Button>
             </div>
           </div>
         </section>

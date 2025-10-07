@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet-async"
 import { SiteHeader } from "../components/site-header"
 import { SiteFooter } from "../components/site-footer"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 import { Button } from "../components/ui/button"
 import { ArrowRight, CheckCircle } from "lucide-react"
 import { Link } from "react-router-dom"
@@ -86,163 +85,201 @@ export default function PricingPage() {
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-sans mb-6">Pricing Options</h2>
                 <p className="text-lg text-muted-foreground font-mono">
                   We offer flexible pricing models to accommodate different business needs and project scopes, whether
-                  you need a comprehensive project, ongoing support, or specialized expertise.
+                  you need ongoing support, a comprehensive project, or bespoke boutique solutions.
                 </p>
               </div>
 
-              <Tabs defaultValue="fractional-writing" className="w-full">
-                <TabsList className="grid w-full max-w-3xl mx-auto grid-cols-1 sm:grid-cols-2 gap-2 mb-12">
-                  <TabsTrigger value="fractional-writing">🤝🏻 Fractional Team</TabsTrigger>
-                  <TabsTrigger value="project">👷🏼‍♂️ Project Based</TabsTrigger>
-                </TabsList>
-
-                <TabsContent value="project" className="space-y-4">
-                  <div className="max-w-md mx-auto">
-                    <div className="bg-background p-8 rounded-lg shadow-sm">
-                      <h3 className="font-medium text-xl mb-3 font-sans">Copywriting + Web Dev</h3>
-                      <div className="text-3xl font-bold mb-6 font-sans">Start From
-                        <br />$2,000 / Rp25 Juta</div>
-                      <p className="text-muted-foreground mb-6 font-mono">
-                        Custom pricing based on project scope for copywriting and web development.
-                      </p>
-                      <ul className="space-y-3 font-mono">
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>~4-8 weeks to launch</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>Comprehensive support</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>Custom website development</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>SEO + Content strategy</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>Consultation in each stage</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>30 days of post-launch support</span>
-                        </li>
-                      </ul>
-                      <div className="mt-8">
-                        <Link to="/contact">
-                          <Button className="w-full">Contact Us for Project Based</Button>
-                        </Link>
-                      </div>
-                    </div>
+              <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+                {/* Fractional Team */}
+                <div className="bg-background p-8 rounded-lg shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 cursor-pointer">
+                  <div className="mb-4">
+                    <span className="text-2xl mr-2">🤝🏻</span>
+                    <span className="text-sm font-mono text-muted-foreground">FRACTIONAL TEAM</span>
                   </div>
-                </TabsContent>
+                  <h3 className="font-medium text-xl mb-3 font-sans">Storytelling Partner</h3>
+                  <div className="text-3xl font-bold mb-6 font-sans">Monthly Retainer <br />$1,000 / Rp16 Juta</div>
+                  <p className="text-muted-foreground mb-6 font-mono">EVERYTHING your brand needs to communicate. 3-month minimum retainer partnership.</p>
+                  <ul className="space-y-3 font-mono mb-8">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>DEDICATED WRITING DEPARTMENT</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>UX & Technical Writing, Marketing, PR</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Senior to Lead level writer</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Fully remote collaboration, unlimited revisions</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Monthly strategy sessions</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>3-month minimum commitment</span>
+                    </li>
+                  </ul>
+                  <Link to="/contact">
+                    <Button className="w-full">Contact Us for Fractional Team</Button>
+                  </Link>
+                </div>
 
-                <TabsContent value="fractional-writing" className="space-y-4">
-                  <div className="max-w-md mx-auto">
-                    <div className="bg-background p-8 rounded-lg shadow-sm">
-                      <h3 className="font-medium text-xl mb-3 font-sans">Storytelling Partner</h3>
-                      <div className="text-3xl font-bold mb-6 font-sans">Monthly Retainer <br />$1,000 / Rp16 Juta</div>
-                      <p className="text-muted-foreground mb-6 font-mono">EVERYTHING your brand needs to communicate. 3-month minimum retainer partnership.</p>
-                      <ul className="space-y-3 font-mono">
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>DEDICATED WRITING DEPARTMENT</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>UX & Technical Writing, Marketing, PR</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>Senior to Lead level writer</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>Fully remote collaboration, unlimited revisions</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>Monthly strategy sessions</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>3-month minimum commitment</span>
-                        </li>
-                      </ul>
-                      <div className="mt-8">
-                        <Link to="/contact">
-                          <Button className="w-full">Contact Us for Fractional Team</Button>
-                        </Link>
-                      </div>
-                    </div>
+                {/* Project Based */}
+                <div className="bg-background p-8 rounded-lg shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-105 hover:-translate-y-1 cursor-pointer">
+                  <div className="mb-4">
+                    <span className="text-2xl mr-2">👷🏼‍♂️</span>
+                    <span className="text-sm font-mono text-muted-foreground">PROJECT BASED</span>
                   </div>
-                </TabsContent>
+                  <h3 className="font-medium text-xl mb-3 font-sans">Copywriting + Web Dev</h3>
+                  <div className="text-3xl font-bold mb-6 font-sans">Start From
+                    <br />$2,000 / Rp25 Juta</div>
+                  <p className="text-muted-foreground mb-6 font-mono">
+                    Custom pricing based on project scope for copywriting and web development.
+                  </p>
+                  <ul className="space-y-3 font-mono mb-8">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>~4-8 weeks to launch</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Comprehensive support</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Custom website development</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>SEO + Content strategy</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>Consultation in each stage</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span>30 days of post-launch support</span>
+                    </li>
+                  </ul>
+                  <Link to="/contact">
+                    <Button className="w-full">Contact Us for Project Based</Button>
+                  </Link>
+                </div>
 
-              </Tabs>
+                {/* Custom/Boutique Solutions */}
+                <div className="bg-gradient-to-br from-emerald-50 to-green-100 p-8 rounded-lg shadow-lg border-2 border-emerald-200 transition-all duration-900 hover:shadow-xl hover:scale-105 hover:-translate-y-1 hover:border-emerald-300 cursor-pointer group animate-pulse">
+                  <div className="mb-4">
+                    <span className="text-2xl mr-2">✨</span>
+                    <span className="text-sm font-mono text-emerald-700">BOUTIQUE SOLUTIONS</span>
+                  </div>
+                  <h3 className="font-medium text-xl mb-3 font-sans text-gray-900">Custom Storytelling</h3>
+                  <div className="text-3xl font-bold mb-6 font-sans text-gray-900">Custom Quote,
+                    <br />Contact for Pricing</div>
+                  <p className="text-emerald-800 mb-6 font-mono">
+                    Bespoke copywriting and storytelling solutions tailored to your unique brand challenges and goals.
+                  </p>
+                  <ul className="space-y-3 font-mono mb-8">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span className="text-gray-800">Comprehensive brand strategy & positioning</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span className="text-gray-800">Multi-channel content ecosystem</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span className="text-gray-800">Executive & thought leadership content</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span className="text-gray-800">Industry-specific expertise</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span className="text-gray-800">Dedicated project management</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-emerald-600 shrink-0 mt-0.5" />
+                      <span className="text-gray-800">Extended post-launch support</span>
+                    </li>
+                  </ul>
+                  <Link to="/contact">
+                    <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">Get Custom Quote</Button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </section>
 
-          {/* Custom Solutions */}
+          {/* Startup Solutions */}
           <section className="py-16 bg-muted/30 md:py-24">
             <div className="container">
               <div className="mx-auto max-w-3xl text-left">
-                <h2 className="text-3xl font-bold tracking-tight mb-6 sm:text-4xl font-sans">Custom Solutions</h2>
+                <h2 className="text-3xl font-bold tracking-tight mb-6 sm:text-4xl font-sans">Startup Storytelling Solutions</h2>
                 <p className="text-lg text-muted-foreground mb-8 font-mono">
-                  Need something more tailored to your specific requirements? We offer custom packages designed to
-                  address your unique storytelling challenges.
+                  Built for startups who need clear, comprehensive storytelling that adapts as you grow. We provide 
+                  end-to-end support with flexible payment options, including equity partnerships for the right fit.
                 </p>
 
                 <div className="bg-background p-8 rounded-lg shadow-sm">
-                  <h3 className="font-medium text-xl mb-4 font-sans">Tailored Storytelling Solutions</h3>
+                  <h3 className="font-medium text-xl mb-4 font-sans">End-to-End Startup Support</h3>
                   <p className="text-muted-foreground mb-6 font-mono">
-                    Our custom solutions are designed after a thorough consultation to understand your specific needs,
-                    challenges, and goals. We'll create a proposal that addresses your unique situation with transparent
-                    pricing.
+                    We understand that startup storytelling isn't just about one product or service—it's about building 
+                    a narrative that evolves with your company. Our approach combines strategic thinking with experimental 
+                    storytelling to discover what resonates with your audience.
+                    <br/>
+                    <br/>
+                    We might also assign writers who have deep expertise in your industry.
                   </p>
                   <div className="space-y-4 mb-8">
                     <div className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium font-sans">Specialized Industry Expertise</p>
+                        <p className="font-medium font-sans">Comprehensive Brand Foundation</p>
                         <p className="text-sm text-muted-foreground font-mono">
-                          For businesses in complex or regulated industries
+                          From mission statements to investor decks—we cover all your communication needs
                         </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium font-sans">Multi-Brand Storytelling</p>
+                        <p className="font-medium font-sans">Flexible Payment Options</p>
                         <p className="text-sm text-muted-foreground font-mono">
-                          For companies managing multiple brands or product lines
+                          Cash, equity, or hybrid arrangements—we work with your startup's financial reality
                         </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium font-sans">International Narrative Development</p>
+                        <p className="font-medium font-sans">Experimental Storytelling</p>
                         <p className="text-sm text-muted-foreground font-mono">
-                          For brands expanding into global markets
+                          We test different narrative approaches to find what connects with your specific audience
                         </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                       <CheckCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-medium font-sans">Rebranding & Repositioning</p>
+                        <p className="font-medium font-sans">Growth-Ready Content Strategy</p>
                         <p className="text-sm text-muted-foreground font-mono">
-                          For established companies undergoing significant change
+                          Content that scales from MVP to market leader, adapting to your evolving product portfolio
                         </p>
                       </div>
                     </div>
                   </div>
                   <Link to="/contact">
                     <Button size="lg" className="gap-2">
-                      Request a Custom Quote <ArrowRight className="h-4 w-4" />
+                      Explore Startup Partnership <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>
                 </div>

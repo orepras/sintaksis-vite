@@ -61,8 +61,34 @@ export default function AboutPage() {
                   We build narrative systems that help businesses scale.
                 </h2>
                 <p className="mt-6 text-xl text-muted-foreground font-mono">
-                  We're a collective of writers, designers, and developers who function as your extended storytelling team. Founded by Prasaja Mukti in South Tangerang, we specialize in strategic narrative architecture, crafting stories that evolve with your business from launch to maturity.
+                  We're a collective of writers, designers, and developers who function as your extended storytelling team. Founded in South Tangerang, Indonesia, we specialize in strategic narrative architecture, crafting stories that evolve with your business from launch to maturity.
                 </p>
+              </div>
+            </div>
+          </section>
+
+          {/* founder's note */}
+          <section className="py-16 md:py-24 gradient-background">
+            <div className="container">
+              <div className="mx-auto max-w-3xl bg-background/90 p-8 rounded-lg shadow-sm">
+                <h2 className="text-3xl font-bold tracking-tight mb-8 sm:text-4xl font-sans">Founder's Note</h2>
+                <div className="flex flex-col md:flex-row gap-8 items-center">
+                  <div className="w-64 h-64 md:w-1/3 md:h-auto aspect-square bg-muted rounded-full overflow-hidden">
+                    <img
+                      src="https://prasaja.com/images/prasaja-pic.jpg"
+                      alt="Prasaja Mukti"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="space-y-6 text-lg font-mono">
+                    <p>
+                      "After seeing how disconnected most brand storytelling is from business reality, we created Sintaksis as a hybrid: part strategic partner, part creative laboratory to drive growth."
+                    </p>
+                    <p>
+                      - Prasaja Mukti
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -101,32 +127,6 @@ export default function AboutPage() {
                     <h3 className="text-xl font-semibold mb-3 font-sans">Passionate</h3>
                     <p className="text-muted-foreground font-mono">
                       Beyond client work, we experiment with storytelling methodologies and openly share our findings.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* founder's note */}
-          <section className="py-16 md:py-24 gradient-background">
-            <div className="container">
-              <div className="mx-auto max-w-3xl bg-background/90 p-8 rounded-lg shadow-sm">
-                <h2 className="text-3xl font-bold tracking-tight mb-8 sm:text-4xl font-sans">Founder's Note</h2>
-                <div className="flex flex-col md:flex-row gap-8 items-center">
-                  <div className="w-64 h-64 md:w-1/3 md:h-auto aspect-square bg-muted rounded-full overflow-hidden">
-                    <img
-                      src="https://prasaja.com/images/prasaja-pic.jpg"
-                      alt="Prasaja Mukti"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="space-y-6 text-lg font-mono">
-                    <p>
-                      "After seeing how disconnected most brand storytelling is from business reality, we created Sintaksis as a hybrid: part strategic partner, part creative laboratory to drive growth."
-                    </p>
-                    <p>
-                      - Prasaja Mukti
                     </p>
                   </div>
                 </div>
