@@ -177,6 +177,18 @@ export default function ServicesPage() {
                       </ul>
                     </div>
                     <div className="bg-background p-6 rounded-lg shadow-sm">
+                      <h3 className="font-medium mb-2 font-sans">Localization & Internationalization</h3>
+                      <p className="text-muted-foreground font-mono">
+                        Adapt your digital presence for new markets with a structured GILT approach
+                      </p>
+                      <ul className="mt-4 space-y-2 text-sm font-mono">
+                        <li>• Localization of content and UX for target market</li>
+                        <li>• GILT-based strategy for market expansion</li>
+                        <li>• Guidelines for ongoing globalization and localization</li>
+                        <li>• Translation workflows and quality standards</li>
+                      </ul>
+                    </div>
+                    <div className="bg-background p-6 rounded-lg shadow-sm">
                       <h3 className="font-medium mb-2 font-sans">Email Marketing</h3>
                       <p className="text-muted-foreground font-mono">
                         Craft compelling email campaigns that engage your audience

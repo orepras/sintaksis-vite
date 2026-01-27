@@ -278,6 +278,29 @@ The content framework we developed continues to guide AccessTime's communication
             </div>
           </section>
 
+          {/* Related Projects */}
+          <section className="py-16">
+            <div className="container">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-2xl font-bold mb-8 font-sans">Explore More Projects</h2>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <Button asChild variant="outline" size="lg" className="h-auto p-6 flex flex-col items-center gap-2">
+                    <Link to="/projects/blibli">
+                      <span className="font-semibold">Blibli</span>
+                      <span className="text-sm text-muted-foreground">Copy Workflow & Team Training</span>
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="h-auto p-6 flex flex-col items-center gap-2">
+                    <Link to="/projects/tokotype">
+                      <span className="font-semibold">Tokotype</span>
+                      <span className="text-sm text-muted-foreground">Brand Strategy & Content Development</span>
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Navigation */}
           <section className="py-8 border-t">
             <div className="container">

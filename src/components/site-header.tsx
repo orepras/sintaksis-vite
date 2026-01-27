@@ -1,9 +1,10 @@
-import { Menu, X } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
 export function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isResourcesHovered, setIsResourcesHovered] = useState(false)
 
   return (
     <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur">
@@ -18,7 +19,7 @@ export function SiteHeader() {
         </button>
 
         {/* Desktop navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6">
           <Link to="/services" className="text-sm font-medium transition-colors hover:text-primary">
             Services
           </Link>
@@ -28,9 +29,35 @@ export function SiteHeader() {
           <Link to="/" className="font-mono font-semibold text-2xl mx-6">
             Sintaksis
           </Link>
-          <Link to="/process" className="text-sm font-medium transition-colors hover:text-primary">
-            Process
-          </Link>
+          <div 
+            className="relative"
+            onMouseEnter={() => setIsResourcesHovered(true)}
+            onMouseLeave={() => setIsResourcesHovered(false)}
+          >
+            <Link to="/resources" className="text-sm font-medium transition-colors hover:text-primary flex items-center gap-1">
+              Resources
+              <ChevronDown className="h-3 w-3" />
+            </Link>
+            {/* Mega Menu */}
+            {isResourcesHovered && (
+              <div 
+                className="absolute top-full left-0 w-48 bg-background border rounded-lg shadow-lg py-2 z-50"
+                onMouseEnter={() => setIsResourcesHovered(true)}
+                onMouseLeave={() => setIsResourcesHovered(false)}
+              >
+                <span 
+                  className="block px-4 py-2 text-sm text-muted-foreground cursor-default"
+                >
+                  Downloadables
+                </span>
+                <span 
+                  className="block px-4 py-2 text-sm text-muted-foreground cursor-default"
+                >
+                  Blog
+                </span>
+              </div>
+            )}
+          </div>
           <Link to="/pricing" className="text-sm font-medium transition-colors hover:text-primary">
             Pricing
           </Link>
@@ -55,8 +82,8 @@ export function SiteHeader() {
             <Link to="/about" className="text-sm font-medium transition-colors hover:text-primary py-2">
               About
             </Link>
-            <Link to="/process" className="text-sm font-medium transition-colors hover:text-primary py-2">
-              Process
+            <Link to="/resources" className="text-sm font-medium transition-colors hover:text-primary py-2">
+              Resources
             </Link>
             <Link to="/pricing" className="text-sm font-medium transition-colors hover:text-primary py-2">
               Pricing

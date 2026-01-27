@@ -40,7 +40,7 @@ export default function ProjectBlibliPage() {
       },
       {
         id: 'blibli-testimonial-andrew',
-        quote: "I wanter to learn how to get more insight into collaborating with the Tech team. Prasaja's presentation gives me step-by-step instructions on how to organize the copy document with JSON. Plus, the example layouts for different kinds of projects are valuable. The presentation sectioned into digestible parts that kept me curious to learn more. My perspective on how to build a better collaboration with the Tech team has improved, and I've taken up a new interest in the world of UX writing. Thank you, Pras!",
+        quote: "I wanted to learn how to get more insight into collaborating with the Tech team. Prasaja's presentation gives me step-by-step instructions on how to organize the copy document with JSON. Plus, the example layouts for different kinds of projects are valuable. The presentation sectioned into digestible parts that kept me curious to learn more. My perspective on how to build a better collaboration with the Tech team has improved, and I've taken up a new interest in the world of UX writing. Thank you, Pras!",
         author: "Andrew Carlos",
         role: "Senior UX Writer",
         company: "Blibli",
@@ -254,6 +254,29 @@ The success of this workshop and workflow transformation project demonstrated ho
                     <Link to="/contact">
                       Start Your Project
                       <ExternalLink className="h-4 w-4 ml-2" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Related Projects */}
+          <section className="py-16 bg-muted/30">
+            <div className="container">
+              <div className="max-w-4xl mx-auto text-center">
+                <h2 className="text-2xl font-bold mb-8 font-sans">Explore More Projects</h2>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <Button asChild variant="outline" size="lg" className="h-auto p-6 flex flex-col items-center gap-2">
+                    <Link to="/projects/access-time">
+                      <span className="font-semibold">AccessTime</span>
+                      <span className="text-sm text-muted-foreground">Content Strategy & Thought Leadership</span>
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="h-auto p-6 flex flex-col items-center gap-2">
+                    <Link to="/projects/jago">
+                      <span className="font-semibold">Jago</span>
+                      <span className="text-sm text-muted-foreground">Brand Storytelling & UX Writing</span>
                     </Link>
                   </Button>
                 </div>

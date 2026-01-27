@@ -4,10 +4,33 @@ import { SiteFooter } from "../components/site-footer"
 import { Button } from "../components/ui/button"
 import { ArrowRight, Users, Lightbulb, Heart } from "lucide-react"
 import { Link } from "react-router-dom"
-import { generateOrganizationSchema } from "../lib/structured-data"
+import { generateOrganizationSchema, generateBreadcrumbSchema, generateFAQSchema } from "../lib/structured-data"
 
 export default function AboutPage() {
   const organizationSchema = generateOrganizationSchema()
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://sintaksis.com" },
+    { name: "About", url: "https://sintaksis.com/about" }
+  ])
+  
+  const faqSchema = generateFAQSchema([
+    {
+      question: "What makes Sintaksis different from other copywriting agencies?",
+      answer: "We combine strategic storytelling with technical web development expertise, offering end-to-end solutions that go beyond just copywriting. Our collaborative approach ensures your brand story is not just written, but built into every touchpoint of your digital presence."
+    },
+    {
+      question: "How do you approach brand storytelling?",
+      answer: "Our approach is collaborative and strategic. We start by understanding your business goals, target audience, and unique value proposition. Then we craft narratives that feel authentic to your brand while driving meaningful business results."
+    },
+    {
+      question: "What types of businesses do you work with?",
+      answer: "We work with businesses at every stage - from early-stage startups to established enterprises. Our experience spans fintech, e-commerce, SaaS, and traditional industries, helping each client find their unique voice and story."
+    },
+    {
+      question: "Do you offer ongoing support after project completion?",
+      answer: "Yes, we offer 30 days of post-launch support for all projects, and ongoing fractional team arrangements for businesses that need continuous storytelling support. We believe in building long-term partnerships with our clients."
+    }
+  ])
 
   return (
     <>
@@ -33,6 +56,8 @@ export default function AboutPage() {
         <meta name="twitter:image" content="https://sintaksis.com/og-about.jpg" />
         <link rel="canonical" href="https://sintaksis.com/about" />
         <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
       <div className="flex min-h-screen flex-col">
@@ -177,6 +202,47 @@ export default function AboutPage() {
             </div>
           </section>
 
+          {/* FAQ Section */}
+          <section className="py-16 md:py-24">
+            <div className="container">
+              <div className="mx-auto max-w-3xl text-left">
+                <h2 className="text-3xl font-bold tracking-tight mb-12 sm:text-4xl font-sans">
+                  Frequently Asked Questions
+                </h2>
+
+                <div className="space-y-8">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 font-sans">What makes Sintaksis different from other copywriting agencies?</h3>
+                    <p className="text-muted-foreground font-mono">
+                      We combine strategic storytelling with technical web development expertise, offering end-to-end solutions that go beyond just copywriting. Our collaborative approach ensures your brand story is not just written, but built into every touchpoint of your digital presence.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 font-sans">How do you approach brand storytelling?</h3>
+                    <p className="text-muted-foreground font-mono">
+                      Our approach is collaborative and strategic. We start by understanding your business goals, target audience, and unique value proposition. Then we craft narratives that feel authentic to your brand while driving meaningful business results.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 font-sans">What types of businesses do you work with?</h3>
+                    <p className="text-muted-foreground font-mono">
+                      We work with businesses at every stage - from early-stage startups to established enterprises. Our experience spans fintech, e-commerce, SaaS, and traditional industries, helping each client find their unique voice and story.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3 font-sans">Do you offer ongoing support after project completion?</h3>
+                    <p className="text-muted-foreground font-mono">
+                      Yes, we offer 30 days of post-launch support for all projects, and ongoing fractional team arrangements for businesses that need continuous storytelling support. We believe in building long-term partnerships with our clients.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* CTA Section */}
           <section className="py-16 bg-muted/30 md:py-24">
             <div className="container">
@@ -187,13 +253,13 @@ export default function AboutPage() {
                   with your audience and drive your business forward.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link to="/contact">
-                    <Button size="lg" className="gap-2">
+                  <Link to="/contact" className="flex-1 sm:flex-none">
+                    <Button size="lg" className="gap-2 w-full sm:w-auto sm:min-w-[200px]">
                       Contact Us <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>
-                  <Link to="/services">
-                    <Button variant="outline" size="lg">
+                  <Link to="/services" className="flex-1 sm:flex-none">
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto sm:min-w-[200px]">
                       Explore Our Services
                     </Button>
                   </Link>

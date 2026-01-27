@@ -6,7 +6,7 @@ import { SiteHeader } from "../components/site-header"
 import { SiteFooter } from "../components/site-footer"
 import { Link } from "react-router-dom"
 import { Helmet } from "react-helmet-async"
-import { generateOrganizationSchema } from "../lib/structured-data"
+import { generateOrganizationSchema, generateWebSiteSchema, generateBreadcrumbSchema, generateReviewSchema } from "../lib/structured-data"
 import { ClientMarquee } from "../components/ClientMarquee"
 import { PortfolioSection } from "../components/portfolio-section"
 import accesstimeLogo from "../assets/logos/accesstime.svg"
@@ -19,13 +19,31 @@ import suariseLogo from "../assets/logos/suarise.svg"
 import tokotypeLogo from "../assets/logos/tokotype.svg"
 
 export default function HomePage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://sintaksis.com" }
+  ])
+
+  const reviewSchema = generateReviewSchema([
+    {
+      author: "Adindha Karunia",
+      rating: 5,
+      reviewBody: "The session was highly insightful! Really appreciate kak Pras for highlighting that copywriters are connectors of the team, not decorators. The session inspired me to be more mindful of my copy's journey, especially on how it will be rendered.",
+      datePublished: "2026-01-27"
+    },
+    {
+      author: "Andrew Carlos",
+      rating: 5,
+      reviewBody: "I wanted to learn how to get more insight into collaborating with the Tech team. Prasaja's presentation gives me step-by-step instructions on how to organize the copy document with JSON. Plus, the example layouts for different kinds of projects are valuable.",
+      datePublished: "2026-01-27"
+    }
+  ])
 
   return (
     <>
       <Helmet>
         <title>Sintaksis - Copywriting & Storytelling Studio | Copy That Feels Human, Stories That Feel True.</title>
         <meta name="description" content="Sintaksis offers premium, product-focused copywriting for businesses that value great storytelling—backed by predictable retainer pricing. Copy that feels human, stories that feel true." />
-        <meta name="keywords" content="copywriting, storytelling, brand narrative, product copywriting, content strategy, marketing copy, business storytelling" />
+        <meta name="keywords" content="copywriting, storytelling, brand narrative, product copywriting, content strategy, marketing copy, business storytelling, web development copywriting, startup copywriting" />
         <meta property="og:title" content="Sintaksis - Copywriting & Storytelling Studio" />
         <meta property="og:description" content="Copy that feels human, stories that feel true. Premium copywriting and storytelling for businesses at every stage." />
         <meta property="og:type" content="website" />
@@ -39,6 +57,15 @@ export default function HomePage() {
       <script type="application/ld+json">
         {JSON.stringify(generateOrganizationSchema())}
       </script>
+      <script type="application/ld+json">
+        {JSON.stringify(generateWebSiteSchema())}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(reviewSchema)}
+      </script>
 
       <div className="flex min-h-screen flex-col">
         <SiteHeader />
@@ -50,9 +77,10 @@ export default function HomePage() {
           <div className="container relative z-10">
             <div className="flex flex-col justify-center space-y-6 max-w-3xl mx-auto">
               <h1 className="text-4xl font-bold tracking-tight md:text-5xl font-sans text-center">
-                Writing That Works<br></br><strong>the Way People Do</strong>.
+                Conversational Copywriting Services for Businesses <strong>That Want to Sound Human</strong>.
               </h1>
-              <p className="text-sm md:text-lg font-mono text-center">Sintaksis is a copywriting and storytelling studio helping businesses craft product-focused writing that builds trust, and scales with your business. Always clear. <span className="font-bold italic">Always on predictable retainer pricing.</span>
+              <p className="text-sm md:text-lg font-mono text-center">
+                Sintaksis is a storytelling agency for teams that care about craft as much as conversions. We help your product speak clearly, build trust, and <span className="font-bold italic">stay unmistakably human in an AI-driven world</span>.
               </p>
                 <div className="text-center">
                   <Link 
@@ -104,11 +132,11 @@ export default function HomePage() {
               <h2 className="text-3xl font-bold tracking-tight mb-8 sm:text-4xl font-sans">More than copy. Let's build story.</h2>
               <div className="space-y-6 text-lg font-mono">
                 <p>
-Your business should have a story worth remembering. But too often these stories get fractured, scattered across disjointed touchpoints, diluted by committee edits, lost in translation between teams. What starts as a compelling narrative becomes a whisper in the marketplace noise. Don't just depend on campaigns, build a brand that lasts.
-                </p>
-                
+Your business should have a story worth remembering. But somewhere along the way, that story gets a little… lost. It gets stretched across too many touchpoints, watered down by feedback threads, and lost in translation between teams. What once felt bold and clear starts sounding like background noise. Because stories don't break overnight, they will fade when no one's keeping them whole.
+
+</p>            
                 <p>
-This is where we come in.</p>
+This is where we (ahem, <i>Sintaksis</i>) come in.</p>
 <p>Sintaksis operates as your narrative continuity team, ensuring your story holds its power whether it's:<br/>
 · A three-word button in your app<br />
 · The manifesto on your homepage<br />
@@ -116,9 +144,9 @@ This is where we come in.</p>
 · The email that turns one-time buyers into devotees                </p>
                 
                 <p>
-                  Our work starts with a simple premise: <strong>Your product deserves to be understood, your brand deserves to be remembered, and your customers deserve a story worth buying into.</strong>
+                  Our work starts with a simple premise that <strong>your product deserves to be understood, your brand deserves to be remembered, and your customers deserve a story worth buying into.</strong>
 </p>
-<p>Let's tell it properly.
+<p>Let's tell it properly, and make it stick.
 
 </p>
               </div>
@@ -142,22 +170,22 @@ This is where we come in.</p>
             <Tabs defaultValue="startup" className="w-full">
               <div className="sticky top-16 z-30 bg-muted/30 py-4 -mx-4 px-4 md:mx-0">
                 <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mb-8">
-                  <TabsTrigger value="startup" className="flex items-center gap-2">
+                  <TabsTrigger value="startup" className="flex items-center gap-2 data-[state=active]:bg-emerald-100 data-[state=active]:text-emerald-700 data-[state=active]:border-emerald-200">
                     <Rocket className="h-4 w-4" />
                     <span className="hidden sm:inline">Startup</span>
                     <span className="sm:hidden">Startup</span>
                   </TabsTrigger>
-                  <TabsTrigger value="growth" className="flex items-center gap-2">
+                  <TabsTrigger value="growth" className="flex items-center gap-2 data-[state=active]:bg-emerald-100 data-[state=active]:text-emerald-700 data-[state=active]:border-emerald-200">
                     <TrendingUp className="h-4 w-4" />
                     <span className="hidden sm:inline">Growth</span>
                     <span className="sm:hidden">Growth</span>
                   </TabsTrigger>
-                  <TabsTrigger value="established" className="flex items-center gap-2">
+                  <TabsTrigger value="established" className="flex items-center gap-2 data-[state=active]:bg-emerald-100 data-[state=active]:text-emerald-700 data-[state=active]:border-emerald-200">
                     <Building2 className="h-4 w-4" />
                     <span className="hidden sm:inline">Established</span>
                     <span className="sm:hidden">Estab.</span>
                   </TabsTrigger>
-                  <TabsTrigger value="enterprise" className="flex items-center gap-2">
+                  <TabsTrigger value="enterprise" className="flex items-center gap-2 data-[state=active]:bg-emerald-100 data-[state=active]:text-emerald-700 data-[state=active]:border-emerald-200">
                     <Briefcase className="h-4 w-4" />
                     <span className="hidden sm:inline">Enterprise</span>
                     <span className="sm:hidden">Enter.</span>

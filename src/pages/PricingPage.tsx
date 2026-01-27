@@ -97,7 +97,7 @@ export default function PricingPage() {
                     <span className="text-sm font-mono text-muted-foreground">FRACTIONAL TEAM</span>
                   </div>
                   <h3 className="font-medium text-xl mb-3 font-sans">Storytelling Partner</h3>
-                  <div className="text-3xl font-bold mb-6 font-sans">Monthly Retainer <br />$1,000 / Rp16 Juta</div>
+                  <div className="text-3xl font-bold mb-6 font-sans">Monthly Retainer <br />$1,200 / Rp20 Juta</div>
                   <p className="text-muted-foreground mb-6 font-mono">EVERYTHING your brand needs to communicate. 3-month minimum retainer partnership.</p>
                   <ul className="space-y-3 font-mono mb-8">
                     <li className="flex items-start gap-3">
@@ -126,7 +126,7 @@ export default function PricingPage() {
                     </li>
                   </ul>
                   <Link to="/contact">
-                    <Button className="w-full">Contact Us for Fractional Team</Button>
+                    <Button className="w-full">Ask for Fractional Team</Button>
                   </Link>
                 </div>
 
@@ -138,7 +138,7 @@ export default function PricingPage() {
                   </div>
                   <h3 className="font-medium text-xl mb-3 font-sans">Copywriting + Web Dev</h3>
                   <div className="text-3xl font-bold mb-6 font-sans">Start From
-                    <br />$2,000 / Rp25 Juta</div>
+                    <br />$3,000 / Rp50 Juta</div>
                   <p className="text-muted-foreground mb-6 font-mono">
                     Custom pricing based on project scope for copywriting and web development.
                   </p>
@@ -169,7 +169,7 @@ export default function PricingPage() {
                     </li>
                   </ul>
                   <Link to="/contact">
-                    <Button className="w-full">Contact Us for Project Based</Button>
+                    <Button className="w-full">Ask for Project Based</Button>
                   </Link>
                 </div>
 
@@ -223,9 +223,9 @@ export default function PricingPage() {
           <section className="py-16 bg-muted/30 md:py-24">
             <div className="container">
               <div className="mx-auto max-w-3xl text-left">
-                <h2 className="text-3xl font-bold tracking-tight mb-6 sm:text-4xl font-sans">Startup Storytelling Solutions</h2>
+                <h2 className="text-3xl font-bold tracking-tight mb-6 sm:text-4xl font-sans">Building a Startup?</h2>
                 <p className="text-lg text-muted-foreground mb-8 font-mono">
-                  Built for startups who need clear, comprehensive storytelling that adapts as you grow. We provide 
+                  Don't worry, we've got you covered. We also have this pricing plan for startups who need clear, comprehensive storytelling that adapts as you grow. We provide 
                   end-to-end support with flexible payment options, including equity partnerships for the right fit.
                 </p>
 
@@ -277,11 +277,11 @@ export default function PricingPage() {
                       </div>
                     </div>
                   </div>
-                  <Link to="/contact">
-                    <Button size="lg" className="gap-2">
-                      Explore Startup Partnership <ArrowRight className="h-4 w-4" />
+                  <a href="mailto:lets.talk@sintaksis.com?subject=Partnership Inquiry with [Startup Name]">
+                    <Button size="lg" className="gap-2 w-full sm:w-auto sm:min-w-[200px]">
+                      Send Partnership Inquiry <ArrowRight className="h-4 w-4" />
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -301,9 +301,9 @@ export default function PricingPage() {
                     <p className="text-muted-foreground font-mono">
                       We offer:<br />
 
-                      · Fractional Team: IDR 16 Mil/1.000 USD monthly, with 3-month minimum for ongoing storytelling support<br />
+                      · Fractional Team: IDR 20 Mil/1.200 USD monthly, with 3-month minimum for ongoing storytelling support<br />
 
-                      · Project-Based: Starting at IDR 25 Mil/2.000 USD for comprehensive product storytelling with web development support
+                      · Project-Based: Starting at IDR 50 Mil/3.000 USD for comprehensive product storytelling with web development support
                     </p>
                   </div>
 
@@ -376,12 +376,14 @@ export default function PricingPage() {
                   audience.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Link to="/contact">
-                    <Button size="lg" className="gap-2">
+                  <Link to="/contact" className="flex-1 sm:flex-none">
+                    <Button size="lg" className="gap-2 w-full sm:w-auto sm:min-w-[200px]">
                       Schedule a Consultation <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>
-                  <BookCallButton variant="secondary" size="lg" />
+                  <div className="flex-1 sm:flex-none">
+                    <BookCallButton variant="secondary" size="lg" className="w-full sm:w-auto sm:min-w-[200px]" />
+                  </div>
                 </div>
               </div>
             </div>
