@@ -74,6 +74,10 @@ export default function PricingPage() {
                 <p className="text-xl text-muted-foreground font-mono">
                   Transparent pricing options designed to fit your storytelling needs at every stage of growth.
                 </p>
+                <p className="mt-4 text-sm text-muted-foreground font-mono">
+                  This page shows our standard international pricing. If you're an Indonesia or Southeast Asia business,
+                  you can book a call via our Cal.com link to ask about regional parity rates.
+                </p>
               </div>
             </div>
           </section>
@@ -97,7 +101,7 @@ export default function PricingPage() {
                     <span className="text-sm font-mono text-muted-foreground">FRACTIONAL TEAM</span>
                   </div>
                   <h3 className="font-medium text-xl mb-3 font-sans">Storytelling Partner</h3>
-                  <div className="text-3xl font-bold mb-6 font-sans">Monthly Retainer <br />$1,200 / Rp20 Juta</div>
+                  <div className="text-3xl font-bold mb-6 font-sans">Monthly Retainer <br />$3,000 / Rp50 Juta</div>
                   <p className="text-muted-foreground mb-6 font-mono">EVERYTHING your brand needs to communicate. 3-month minimum retainer partnership.</p>
                   <ul className="space-y-3 font-mono mb-8">
                     <li className="flex items-start gap-3">
@@ -138,7 +142,7 @@ export default function PricingPage() {
                   </div>
                   <h3 className="font-medium text-xl mb-3 font-sans">Copywriting + Web Dev</h3>
                   <div className="text-3xl font-bold mb-6 font-sans">Start From
-                    <br />$3,000 / Rp50 Juta</div>
+                    <br />$5,000 / Rp80 Juta</div>
                   <p className="text-muted-foreground mb-6 font-mono">
                     Custom pricing based on project scope for copywriting and web development.
                   </p>
@@ -301,9 +305,9 @@ export default function PricingPage() {
                     <p className="text-muted-foreground font-mono">
                       We offer:<br />
 
-                      · Fractional Team: IDR 20 Mil/1.200 USD monthly, with 3-month minimum for ongoing storytelling support<br />
+                      · Fractional Team: IDR 50 Mil/3.000 USD monthly, with 3-month minimum for ongoing storytelling support<br />
 
-                      · Project-Based: Starting at IDR 50 Mil/3.000 USD for comprehensive product storytelling with web development support
+                      · Project-Based: Starting at IDR 80 Mil/5.000 USD for comprehensive product storytelling with web development support
                     </p>
                   </div>
 
@@ -371,9 +375,13 @@ export default function PricingPage() {
             <div className="container">
               <div className="mx-auto max-w-3xl text-left">
                 <h2 className="text-3xl font-bold tracking-tight mb-4 sm:text-4xl font-sans">Ready to Hire Us?</h2>
-                <p className="text-lg text-muted-foreground mb-8 font-mono">
+                <p className="text-lg text-muted-foreground mb-4 font-mono">
                   Let's discuss your needs over a call and how we can help your brand connect with your
                   audience.
+                </p>
+                <p className="mt-3 mb-8 text-xs text-muted-foreground font-mono">
+                  Are you based in Indonesia or Southeast Asia? Use this call link to ask about our regional parity
+                  rate.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link to="/contact" className="flex-1 sm:flex-none">

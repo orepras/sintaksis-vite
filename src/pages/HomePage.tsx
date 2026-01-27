@@ -77,10 +77,10 @@ export default function HomePage() {
           <div className="container relative z-10">
             <div className="flex flex-col justify-center space-y-6 max-w-3xl mx-auto">
               <h1 className="text-4xl font-bold tracking-tight md:text-5xl font-sans text-center">
-                Conversational Copywriting Services for Businesses <strong>That Want to Sound Human</strong>.
+                Product Storytelling Services that <strong>Unmistakably Human</strong>.
               </h1>
               <p className="text-sm md:text-lg font-mono text-center">
-                Sintaksis is a storytelling agency for teams that care about craft as much as conversions. We help your product speak clearly, build trust, and <span className="font-bold italic">stay unmistakably human in an AI-driven world</span>.
+                We help your product speak clearly, highly readable to your customers, and <span className="font-bold italic">stay unmistakably human in an AI-driven world</span>.
               </p>
                 <div className="text-center">
                   <Link 
@@ -132,12 +132,10 @@ export default function HomePage() {
               <h2 className="text-3xl font-bold tracking-tight mb-8 sm:text-4xl font-sans">More than copy. Let's build story.</h2>
               <div className="space-y-6 text-lg font-mono">
                 <p>
-Your business should have a story worth remembering. But somewhere along the way, that story gets a little… lost. It gets stretched across too many touchpoints, watered down by feedback threads, and lost in translation between teams. What once felt bold and clear starts sounding like background noise. Because stories don't break overnight, they will fade when no one's keeping them whole.
-
-</p>            
-                <p>
-This is where we (ahem, <i>Sintaksis</i>) come in.</p>
-<p>Sintaksis operates as your narrative continuity team, ensuring your story holds its power whether it's:<br/>
+Your product should have a story worth remembering. But somewhere along the way, that story can gets a little… lost. It gets stretched across too many touchpoints, watered down by feedback threads, and lost in translation between teams. What once felt bold and clear starts sounding like background noise.
+</p>
+<p>Stories don't break overnight, they will fade when no one's keeping them whole. And this is where we (ahem, <i>Sintaksis</i>) come in.</p>
+<p>Sintaksis operates as your product storytelling continuity team, ensuring your story holds its power whether it's:<br/>
 · A three-word button in your app<br />
 · The manifesto on your homepage<br />
 · The press release announcing your Series B<br />
