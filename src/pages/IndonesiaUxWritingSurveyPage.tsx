@@ -209,9 +209,9 @@ export default function IndonesiaUxWritingSurveyPage() {
                     Riset Industri UX Writing Indonesia 2025
                   </h1>
                   <p className="text-lg text-muted-foreground font-mono">
-                    Survei terhadap praktisi dari berbagai jenis perusahaan—gambaran komprehensif pertama tentang kondisi profesi UX Writer di Indonesia.
+                    Survei terhadap praktisi dari berbagai jenis perusahaan, berikut adalah inisiatif untuk memberikan gambaran komprehensif tentang kondisi profesi UX Writer di Indonesia:
                   </p>
-                  <p className="mt-4 text-sm text-muted-foreground">n = 67 responden UX Writer/Content Designer · Desember 2025</p>
+                  <p className="mt-4 text-sm text-muted-foreground">n = 67 responden UX Writer/Content Designer · Diselenggarakan pada bulan Desember 2025</p>
                 </div>
               </div>
             </section>
@@ -230,10 +230,10 @@ export default function IndonesiaUxWritingSurveyPage() {
                     >
                       Evan Gilang Ramadhan
                     </a>
-                    <p className="font-mono text-sm text-muted-foreground">UX Researcher</p>
+                    <p className="font-mono text-sm text-muted-foreground">UX Researcher & Insights Storyteller</p>
                   </div>
                   <div className="rounded-xl border bg-background px-5 py-4 min-w-0">
-                    <p className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-1">Data Storyteller</p>
+                    <p className="text-xs font-mono text-muted-foreground uppercase tracking-wider mb-1">Survey Co-Runner</p>
                     <a
                       href="https://www.linkedin.com/in/prasaja-mukti/"
                       target="_blank"
@@ -242,16 +242,16 @@ export default function IndonesiaUxWritingSurveyPage() {
                     >
                       Prasaja Mukti Aji
                     </a>
-                    <p className="font-mono text-sm text-muted-foreground">Product Storyteller</p>
+                    <p className="font-mono text-sm text-muted-foreground">Head of Product Storyteller</p>
                   </div>
                 </div>
                 <div className="rounded-xl border bg-card p-6">
                   <h3 className="font-semibold font-sans mb-3">Disclaimer</h3>
                   <p className="font-mono text-sm text-muted-foreground mb-4">
-                    Survei ini dimaksudkan untuk meningkatkan daya tawar UX Writer di Indonesia dengan menyediakan baseline data yang jujur dan representatif. Data mentah (raw data) dapat diakses dan dieksplorasi secara bebas oleh siapa pun—kami mendorong peneliti, praktisi, dan stakeholder untuk menggali lebih dalam sesuai kebutuhan.
+                    Survei ini dimaksudkan untuk meningkatkan daya tawar UX Writer di Indonesia dengan menyediakan baseline data yang jujur dan representatif. Data mentah (raw data) dapat diakses dan dieksplorasi secara bebas oleh siapa pun. Kami mendorong peneliti, praktisi, dan stakeholder untuk menggali lebih dalam sesuai kebutuhan.
                   </p>
                   <p className="font-mono text-sm text-muted-foreground">
-                    Temuan survei ini juga akan dibahas dalam acara berbayar (21 Februari 2026) <strong className="text-foreground">Memperkecil Spasi: Membahas Temuan Survei UX Writing Indonesia 2025</strong>. Setiap peserta akan menerima hardcopy laporan hasil survei. <br></br><br></br>Informasi dan tiket:{" "}
+                    Temuan survei ini juga akan dibahas dalam acara berbayar (21 Februari 2026) <strong className="text-foreground">Memperkecil Spasi: Membahas Temuan Survei UX Writing Indonesia 2025</strong>. Setiap peserta akan menerima hardcopy laporan hasil survei dan berkesempatan untuk menyampaikan aspirasi dan interpretasi data yang disajikan. <br></br><br></br>Informasi dan tiket:{" "}
                     <a
                       href="https://www.loket.com/event/memperkecil-spasi"
                       target="_blank"
@@ -269,19 +269,19 @@ export default function IndonesiaUxWritingSurveyPage() {
               <div className="container max-w-5xl">
                 <h2 className="text-2xl font-bold font-sans mb-6">1. Latar Belakang</h2>
                 <p className="font-mono text-sm mb-6">
-                  Dalam dua hingga tiga tahun terakhir, peran UX Writer di Indonesia terlihat kehilangan visibilitas dan pengaruhnya di banyak organisasi. Dibandingkan role lain di product team, UX Writer sering dianggap sebagai posisi pendukung belaka, bukan posisi yang memiliki dampak strategis.
+                  Dalam dua hingga tiga tahun terakhir, peran UX Writer di Indonesia dirasa memiliki visibilitas dan pengaruh yang meredup di banyak organisasi. Dibandingkan role lain di tim produk atau desain, UX Writer sering dianggap sebagai posisi pendukung, bukan posisi yang memiliki dampak strategis.
                 </p>
                 <p className="font-mono text-sm mb-6">
-                  Di sisi lain, informasi terkait praktik kerja, standar kualitas, KPI, ekspektasi bisnis, hingga salary bracket UX Writer di berbagai industri masih sangat minim dan tidak terstruktur. Akibatnya:
+                  Di sisi lain, informasi terkait praktik kerja, standar kualitas, KPI, ekspektasi bisnis, hingga salary bracket UX Writer di berbagai industri masih sangat minim dan tidak terstruktur. Hal ini berakibat pada:
                 </p>
                 <ul className="font-mono text-sm space-y-2 list-disc pl-6 text-muted-foreground">
                   <li>Banyak UX Writer yang tidak tahu sebenarnya berapa nilai kompetensi mereka.</li>
                   <li>Stakeholder sulit diyakinkan tentang dampak UX Writing.</li>
-                  <li>Thought leadership di bidang UX Writing belum berkembang.</li>
+                  <li>Thought leadership di bidang UX Writing belum berkembang, cenderung repetitif dan fokus pada beberapa tema permukaan.</li>
                   <li>Tidak ada baseline nasional tentang bagaimana seharusnya UX Writing berkontribusi pada bisnis.</li>
                   <li>Praktik kerja UX Writer menjadi sangat berbeda-beda antar perusahaan tanpa ada standar yang bisa dirujuk.</li>
                 </ul>
-                <p className="font-mono text-sm mt-6 text-primary font-medium">Riset ini hadir untuk menjawab kekosongan tersebut.</p>
+                <p className="font-mono text-sm mt-6 text-primary font-medium">Riset ini hadir untuk menjawab celah—<i>layaknya spasi antar kata</i>—tersebut.</p>
               </div>
             </section>
 

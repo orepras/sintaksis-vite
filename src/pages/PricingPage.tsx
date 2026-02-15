@@ -305,9 +305,9 @@ export default function PricingPage() {
                     <p className="text-muted-foreground font-mono">
                       We offer:<br />
 
-                      · Fractional Team: 3.000 USD monthly, with 3-month minimum for ongoing storytelling support<br />
+                      · Fractional Team: $3,000 monthly, with 3-month minimum for ongoing storytelling support<br />
 
-                      · Project-Based: Starting at 5.000 USD for comprehensive product storytelling with web development support
+                      · Project-Based: Starting at $5,000 for comprehensive product storytelling with web development support
                     </p>
                   </div>
 
@@ -380,8 +380,7 @@ export default function PricingPage() {
                   audience.
                 </p>
                 <p className="mt-3 mb-8 text-xs text-muted-foreground font-mono">
-                  Are you based in Indonesia or Southeast Asia? Use this call link to ask about our regional parity
-                  rate.
+                  If you are based in Indonesia or Southeast Asia, do tell us in the call, we can discuss about our regional parity rate.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link to="/contact" className="flex-1 sm:flex-none">

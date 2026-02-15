@@ -59,7 +59,7 @@ function App() {
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/downloadables" element={<DownloadablesPage />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/indonesia-ux-writing-survey" element={<IndonesiaUxWritingSurveyPage />} />
+          <Route path="/indonesia-ux-writing" element={<IndonesiaUxWritingSurveyPage />} />
           <Route path="/blog/:slug" element={<BlogPostWrapper />} />
         </Routes>
       </Router>

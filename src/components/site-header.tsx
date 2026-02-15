@@ -34,27 +34,17 @@ export function SiteHeader() {
             onMouseEnter={() => setIsResourcesHovered(true)}
             onMouseLeave={() => setIsResourcesHovered(false)}
           >
-            <Link to="/resources" className="text-sm font-medium transition-colors hover:text-primary flex items-center gap-1">
+            <span className="text-sm font-medium text-muted-foreground flex items-center gap-1 cursor-default">
               Resources
               <ChevronDown className="h-3 w-3" />
-            </Link>
-            {/* Mega Menu */}
+            </span>
             {isResourcesHovered && (
               <div 
-                className="absolute top-full left-0 w-48 bg-background border rounded-lg shadow-lg py-2 z-50"
+                className="absolute top-full left-0 px-4 py-2 mt-1 bg-muted text-muted-foreground text-sm rounded-md shadow-md z-50 whitespace-nowrap"
                 onMouseEnter={() => setIsResourcesHovered(true)}
                 onMouseLeave={() => setIsResourcesHovered(false)}
               >
-                <span 
-                  className="block px-4 py-2 text-sm text-muted-foreground cursor-default"
-                >
-                  Downloadables
-                </span>
-                <span 
-                  className="block px-4 py-2 text-sm text-muted-foreground cursor-default"
-                >
-                  Blog
-                </span>
+                To be released
               </div>
             )}
           </div>
@@ -82,9 +72,9 @@ export function SiteHeader() {
             <Link to="/about" className="text-sm font-medium transition-colors hover:text-primary py-2">
               About
             </Link>
-            <Link to="/resources" className="text-sm font-medium transition-colors hover:text-primary py-2">
-              Resources
-            </Link>
+            <span className="text-sm font-medium text-muted-foreground py-2 cursor-default">
+              Resources (To be released)
+            </span>
             <Link to="/pricing" className="text-sm font-medium transition-colors hover:text-primary py-2">
               Pricing
             </Link>

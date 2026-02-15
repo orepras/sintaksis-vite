@@ -132,7 +132,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-bold tracking-tight mb-8 sm:text-4xl font-sans">More than copy. Let's build story.</h2>
               <div className="space-y-6 text-lg font-mono">
                 <p>
-Your product should have a story worth remembering. But somewhere along the way, that story can gets a little… lost. It gets stretched across too many touchpoints, watered down by feedback threads, and lost in translation between teams. What once felt bold and clear starts sounding like background noise.
+Your product should have a story worth remembering. But somewhere along the way, the words that build that story can get a little… lost. It gets stretched across too many touchpoints, watered down by feedback threads, and lost in translation between teams. What once felt bold and clear starts sounding like background noise.
 </p>
 <p>Stories don't break overnight, they will fade when no one's keeping them whole. And this is where we (ahem, <i>Sintaksis</i>) come in.</p>
 <p>Sintaksis operates as your product storytelling continuity team, ensuring your story holds its power whether it's:<br/>
@@ -144,7 +144,7 @@ Your product should have a story worth remembering. But somewhere along the way,
                 <p>
                   Our work starts with a simple premise that <strong>your product deserves to be understood, your brand deserves to be remembered, and your customers deserve a story worth buying into.</strong>
 </p>
-<p>Let's tell it properly, and make it stick.
+<p>Let's tell it properly, and make the words that build that story stick.
 
 </p>
               </div>
