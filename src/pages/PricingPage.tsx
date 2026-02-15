@@ -101,7 +101,7 @@ export default function PricingPage() {
                     <span className="text-sm font-mono text-muted-foreground">FRACTIONAL TEAM</span>
                   </div>
                   <h3 className="font-medium text-xl mb-3 font-sans">Storytelling Partner</h3>
-                  <div className="text-3xl font-bold mb-6 font-sans">Monthly Retainer <br />$3,000 / Rp50 Juta</div>
+                  <div className="text-3xl font-bold mb-6 font-sans">Monthly Retainer <br />$3,000</div>
                   <p className="text-muted-foreground mb-6 font-mono">EVERYTHING your brand needs to communicate. 3-month minimum retainer partnership.</p>
                   <ul className="space-y-3 font-mono mb-8">
                     <li className="flex items-start gap-3">
@@ -142,7 +142,7 @@ export default function PricingPage() {
                   </div>
                   <h3 className="font-medium text-xl mb-3 font-sans">Copywriting + Web Dev</h3>
                   <div className="text-3xl font-bold mb-6 font-sans">Start From
-                    <br />$5,000 / Rp80 Juta</div>
+                    <br />$5,000</div>
                   <p className="text-muted-foreground mb-6 font-mono">
                     Custom pricing based on project scope for copywriting and web development.
                   </p>
@@ -305,9 +305,9 @@ export default function PricingPage() {
                     <p className="text-muted-foreground font-mono">
                       We offer:<br />
 
-                      · Fractional Team: IDR 50 Mil/3.000 USD monthly, with 3-month minimum for ongoing storytelling support<br />
+                      · Fractional Team: 3.000 USD monthly, with 3-month minimum for ongoing storytelling support<br />
 
-                      · Project-Based: Starting at IDR 80 Mil/5.000 USD for comprehensive product storytelling with web development support
+                      · Project-Based: Starting at 5.000 USD for comprehensive product storytelling with web development support
                     </p>
                   </div>
 

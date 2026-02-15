@@ -14,6 +14,7 @@ import ProjectAccessTimePage from './pages/ProjectAccessTimePage'
 import ResourcesPage from './pages/ResourcesPage'
 import DownloadablesPage from './pages/DownloadablesPage'
 import BlogPage from './pages/BlogPage'
+import IndonesiaUxWritingSurveyPage from './pages/IndonesiaUxWritingSurveyPage'
 import { BlogPost } from './components/blog-post'
 import { getBlogPostBySlug } from './data/blog-posts'
 import ScrollToTop from './components/ScrollToTop'
@@ -58,6 +59,7 @@ function App() {
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/downloadables" element={<DownloadablesPage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/indonesia-ux-writing-survey" element={<IndonesiaUxWritingSurveyPage />} />
           <Route path="/blog/:slug" element={<BlogPostWrapper />} />
         </Routes>
       </Router>
