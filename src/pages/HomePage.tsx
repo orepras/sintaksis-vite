@@ -144,7 +144,7 @@ Your product should have a story worth remembering. But somewhere along the way,
                 <p>
                   Our work starts with a simple premise that <strong>your product deserves to be understood, your brand deserves to be remembered, and your customers deserve a story worth buying into.</strong>
 </p>
-<p>Let's tell it properly, and make the words that build that story stick.
+<p>Let's tell it properly, and make the words that build the story stick.
 
 </p>
               </div>

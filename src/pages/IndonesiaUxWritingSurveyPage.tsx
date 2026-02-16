@@ -248,7 +248,16 @@ export default function IndonesiaUxWritingSurveyPage() {
                 <div className="rounded-xl border bg-card p-6">
                   <h3 className="font-semibold font-sans mb-3">Disclaimer</h3>
                   <p className="font-mono text-sm text-muted-foreground mb-4">
-                    Survei ini dimaksudkan untuk meningkatkan daya tawar UX Writer di Indonesia dengan menyediakan baseline data yang jujur dan representatif. Data mentah (raw data) dapat diakses dan dieksplorasi secara bebas oleh siapa pun. Kami mendorong peneliti, praktisi, dan stakeholder untuk menggali lebih dalam sesuai kebutuhan.
+                    Survei ini dimaksudkan untuk meningkatkan daya tawar UX Writer di Indonesia dengan menyediakan baseline data yang jujur dan representatif. Data mentah (raw data) dapat diakses dan dieksplorasi secara bebas oleh siapa pun. Kami mendorong peneliti, praktisi, dan stakeholder untuk menggali lebih dalam sesuai kebutuhan.<br></br><br></br>
+                    Data mentah survei dapat {" "}
+                    <a
+
+                      href="/src/data/raw-data-survey.xlsx"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary font-medium hover:underline"
+                    
+                    >diunduh secara cuma-cuma.</a>
                   </p>
                   <p className="font-mono text-sm text-muted-foreground">
                     Temuan survei ini juga akan dibahas dalam acara berbayar (21 Februari 2026) <strong className="text-foreground">Memperkecil Spasi: Membahas Temuan Survei UX Writing Indonesia 2025</strong>. Setiap peserta akan menerima hardcopy laporan hasil survei dan berkesempatan untuk menyampaikan aspirasi dan interpretasi data yang disajikan. <br></br><br></br>Informasi dan tiket:{" "}
@@ -1123,7 +1132,7 @@ export default function IndonesiaUxWritingSurveyPage() {
                 </ul>
 
                 {/* Sintesis & Kesimpulan */}
-                <h3 className="text-xl font-bold font-sans mb-4">Sintesis & Jalan Keluar dari Lingkaran Setan</h3>
+                <h3 className="text-xl font-bold font-sans mb-4">Sintesis & Memperkecil Celah</h3>
                 <p className="font-mono text-sm mb-6">Triangulasi data kuantitatif dengan insight kualitatif:</p>
                 <ul className="space-y-3 font-mono text-sm mb-6">
                   <li><strong>Gap persepsi 0.82</strong> + &quot;Masih ada yang menggampangkan pekerjaan UX Writer&quot; → Butuh edukasi kontinu + bukti impact konkret.</li>
@@ -1138,7 +1147,7 @@ export default function IndonesiaUxWritingSurveyPage() {
                     <li><strong className="text-foreground">Level Komunitas:</strong> Peer review network lintas perusahaan, sharing salary data, collective advocacy.</li>
                     <li><strong className="text-foreground">Level Industri:</strong> Standardisasi career ladder, metrik impact, dan AI governance framework.</li>
                   </ul>
-                  <p className="font-mono text-sm mt-4 italic">UX Writer Indonesia tidak butuh simpati; mereka butuh struktur, tools, dan recognition yang setara dengan kontribusi mereka. Solusi itu harus datang dari gerakan kolektif.</p>
+                  <p className="font-mono text-sm mt-4 italic">UX Writer Indonesia tidak butuh simpati yang dibentuk dari diskusi-diskusi semata, yang dibutuhkan adalah struktur konkret, tools, dan recognition yang setara dengan kontribusi mereka. Solusi itu harus datang dari gerakan kolektif.</p>
                 </div>
               </div>
             </section>
