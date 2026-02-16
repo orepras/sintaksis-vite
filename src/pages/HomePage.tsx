@@ -469,6 +469,21 @@ Your product should have a story worth remembering. But somewhere along the way,
         </section>
       </main>
 
+      {/* Fixed research banner */}
+      <div className="fixed inset-x-0 bottom-0 z-40 flex justify-center px-4 pb-4">
+        <Link
+          to="/indonesia-ux-writing-survey"
+          className="w-full max-w-3xl rounded-full bg-emerald-900 text-emerald-50 px-4 py-3 shadow-lg border border-emerald-700 flex flex-col sm:flex-row sm:items-center gap-2 hover:bg-emerald-800 transition-colors"
+        >
+          <p className="text-xs sm:text-sm font-mono text-center sm:text-left">
+            Curious about UX Writing in Indonesia and wanna get actionable insights?
+          </p>
+          <span className="text-xs sm:text-sm font-semibold underline underline-offset-4 sm:ml-auto text-center sm:text-right">
+            Read Our Research
+          </span>
+        </Link>
+      </div>
+
         <SiteFooter />
       </div>
     </>
