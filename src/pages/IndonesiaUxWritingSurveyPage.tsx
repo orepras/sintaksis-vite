@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async"
 import { SiteHeader } from "../components/site-header"
 import { SiteFooter } from "../components/site-footer"
+import { Link } from "react-router-dom"
 import {
   BarChart,
   Bar,
@@ -200,6 +201,17 @@ export default function IndonesiaUxWritingSurveyPage() {
           <SiteHeader />
 
           <main className="flex-1">
+            {/* Language toggle */}
+            <section className="border-b bg-muted/40">
+              <div className="container max-w-5xl py-3 flex justify-center">
+                <Link
+                  to="/indonesia-ux-writing-survey-eng"
+                  className="text-xs sm:text-sm font-mono rounded-full px-4 py-1.5 border border-foreground/40 hover:border-foreground hover:bg-background transition-colors text-foreground text-center"
+                >
+                  Read this report in English
+                </Link>
+              </div>
+            </section>
             {/* Hero */}
             <section className="relative border-b bg-gradient-to-b from-muted/50 to-background py-16 md:py-24">
               <div className="container">

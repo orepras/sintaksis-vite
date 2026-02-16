@@ -15,6 +15,7 @@ import ResourcesPage from './pages/ResourcesPage'
 import DownloadablesPage from './pages/DownloadablesPage'
 import BlogPage from './pages/BlogPage'
 import IndonesiaUxWritingSurveyPage from './pages/IndonesiaUxWritingSurveyPage'
+import IndonesiaUxWritingSurveyPageEng from './pages/IndonesiaUxWritingSurveyPageEng'
 import { BlogPost } from './components/blog-post'
 import { getBlogPostBySlug } from './data/blog-posts'
 import ScrollToTop from './components/ScrollToTop'
@@ -60,6 +61,7 @@ function App() {
           <Route path="/downloadables" element={<DownloadablesPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/indonesia-ux-writing-survey" element={<IndonesiaUxWritingSurveyPage />} />
+          <Route path="/indonesia-ux-writing-survey-eng" element={<IndonesiaUxWritingSurveyPageEng />} />
           <Route path="/blog/:slug" element={<BlogPostWrapper />} />
         </Routes>
       </Router>
