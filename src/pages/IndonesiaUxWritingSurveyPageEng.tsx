@@ -913,7 +913,7 @@ export default function IndonesiaUxWritingSurveyPageEng() {
             {/* Closing */}
             <section className="py-16 md:py-20">
               <div className="container max-w-3xl text-center">
-                <h2 className="text-2xl font-bold font-sans mb-4">Full Report</h2>
+                <h2 className="text-2xl font-bold font-sans mb-4">About the Full Report</h2>
                 <p className="text-muted-foreground font-mono text-sm">
                   This English summary is built on the same quantitative and qualitative data as the Indonesian report.
                   The full narrative, stakeholder voices, and methodological notes are available in Bahasa Indonesia.

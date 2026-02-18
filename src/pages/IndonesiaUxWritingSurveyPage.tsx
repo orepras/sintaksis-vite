@@ -1229,7 +1229,7 @@ export default function IndonesiaUxWritingSurveyPage() {
             {/* Closing — no bounce to Resources */}
             <section className="py-16 md:py-20">
               <div className="container max-w-3xl text-center">
-                <h2 className="text-2xl font-bold font-sans mb-4">Laporan Lengkap</h2>
+                <h2 className="text-2xl font-bold font-sans mb-4">Tentang Laporan Ini</h2>
                 <p className="text-muted-foreground font-mono text-sm">
                   Semua temuan kuantitatif, kualitatif, rekomendasi, dan metodologi riset Industri UX Writing Indonesia 2025 terwujud atas kontribusi praktisi dan stakeholder. Terima kasih atas partisipasi dan dukungannya untuk menjawab kekosongan data tentang UX Writing di Indonesia.
                 </p>
