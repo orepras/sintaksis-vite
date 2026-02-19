@@ -264,7 +264,7 @@ export default function IndonesiaUxWritingSurveyPage() {
                     Data mentah survei dapat {" "}
                     <a
 
-                      href="/src/data/raw-data-survey.xlsx"
+                      href="/data/raw-data-survey.xlsx"
                       download="raw-data-survey.xlsx"
                       rel="noopener noreferrer"
                       className="text-primary font-medium hover:underline"
