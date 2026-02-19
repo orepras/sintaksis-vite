@@ -265,7 +265,7 @@ export default function IndonesiaUxWritingSurveyPage() {
                     <a
 
                       href="/src/data/raw-data-survey.xlsx"
-                      target="_blank"
+                      download="raw-data-survey.xlsx"
                       rel="noopener noreferrer"
                       className="text-primary font-medium hover:underline"
                     
